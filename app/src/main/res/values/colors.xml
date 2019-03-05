@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="splashColor">#FFD700</color>
+
+    <color name="gray">#4c556c</color>
+    <color name="silver">#f9f9f9</color>
+    <color name="white">#ffffff</color>
+    <color name="clear">#00000000</color>
+    <color name="black80">#cc000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black">#000000</color>
+
+    <!--Eng Text Color-->
+    <color name="engText">#f0f0f0</color>
+
+    <!--Eng Box Color-->
+    <color name="engBox">#484848</color>
+
+    <!--MM Text Color-->
+    <color name="mmText">#484848</color>
+
+    <!--MM Box Color-->
+    <color name="mmBox">#f0f0f0</color>
+
+    <!--UnderLine Color-->
+    <color name="underline">#d8d8d8</color>
+
+    <color name="green">#00ff00</color>
+
+    <color name="red">#ff0000</color>
+
+
+</resources>

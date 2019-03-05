@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LearnActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/iconback"
+                    android:background="@color/clear"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
+
+            <com.firstappsta.mingalapar.Library.TextViewPlus
+                android:id="@+id/tvCategoryTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:gravity="center"
+                android:text="Learn"
+                app:customFont="fonts/Dream_Bold.ttf"
+                app:autoSizeMaxTextSize="24dp"
+                app:autoSizeMinTextSize="20dp"
+                app:autoSizeTextType="uniform"/>
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/underline">
+
+        </View>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="45">
+
+                                <com.firstappsta.mingalapar.Library.TextViewPlus
+                                    android:id="@+id/tvTitleEng1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8"
+                                    android:background="@drawable/custom_box_for_engtext"
+                                    android:gravity="center"
+                                    android:text="H1V1E"
+                                    app:autoSizeMaxTextSize="16dp"
+                                    app:autoSizeMinTextSize="8dp"
+                                    app:autoSizeTextType="uniform"                                    android:textColor="@color/engText"
+                                    app:customFont="fonts/Dream.ttf"
+                                    android:inputType="textCapWords" />
+
+                                <ImageView
+                                    android:id="@+id/img1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="22"
+                                    android:src="@drawable/imgfruit_apple"
+                                    android:scaleType="centerCrop"
+                                    android:onClick="onClickImage"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="15"
+                                    android:background="@drawable/custom_box_for_mmtext">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/custom_box_for_mmtext"
+                                        android:orientation="vertical">
+
+                                        <com.firstappsta.mingalapar.Library.TextViewPlus
+                                            android:id="@+id/tvTitleMm1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="7"
+                                            android:gravity="center"
+                                            android:text="ပန်းသီး"
+                                            android:textColor="@color/mmText"
+                                            app:autoSizeMaxTextSize="16dp"
+                                            app:autoSizeMinTextSize="8dp"
+                                            app:autoSizeTextType="uniform"
+                                            app:customFont="fonts/mm3.ttf" />
+
+                                        <LinearLayout
+                                            android:id="@+id/imgSpeaker1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="8"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:onClick="onClickSpeaker"
+                                            android:weightSum="10">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/iconspeaker1"
+                                                android:padding="3dp"
+                                                android:adjustViewBounds="true"/>
+
+                                            <com.airbnb.lottie.LottieAnimationView
+                                                android:id="@+id/animation_sound1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                app:lottie_fileName="Voice.json"
+                                                app:lottie_autoPlay="false"
+                                                app:lottie_loop="false"
+                                                android:layout_weight="6"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="centerCrop"/>
+
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"/>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="45">
+
+                                <com.firstappsta.mingalapar.Library.TextViewPlus
+                                    android:id="@+id/tvTitleEng3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8"
+                                    android:background="@drawable/custom_box_for_engtext"
+                                    android:gravity="center"
+                                    android:text="H1V2E"
+                                    app:autoSizeMaxTextSize="16dp"
+                                    app:autoSizeMinTextSize="8dp"
+                                    app:autoSizeTextType="uniform"                                    android:textColor="@color/engText"
+                                    app:customFont="fonts/Dream.ttf" />
+
+                                <ImageView
+                                    android:id="@+id/img3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="22"
+                                    android:src="@drawable/imgfruit_blueberry"
+                                    android:scaleType="centerCrop"
+                                    android:onClick="onClickImage"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="15">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/custom_box_for_mmtext"
+                                        android:orientation="vertical">
+
+                                        <com.firstappsta.mingalapar.Library.TextViewPlus
+                                            android:id="@+id/tvTitleMm3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="7"
+                                            android:gravity="center"
+                                            android:text="ဘလူးဘယ်ရီသီး"
+                                            app:autoSizeMaxTextSize="16dp"
+                                            app:autoSizeMinTextSize="8dp"
+                                            app:autoSizeTextType="uniform"                                            android:textColor="@color/mmText"
+                                            app:customFont="fonts/mm3.ttf" />
+
+                                        <LinearLayout
+                                            android:id="@+id/imgSpeaker3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="8"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:onClick="onClickSpeaker"
+                                            android:weightSum="10">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/iconspeaker1"
+                                                android:padding="3dp"
+                                                android:adjustViewBounds="true"/>
+
+                                            <com.airbnb.lottie.LottieAnimationView
+                                                android:id="@+id/animation_sound3"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                app:lottie_fileName="Voice.json"
+                                                app:lottie_loop="false"
+                                                app:lottie_autoPlay="false"
+                                                android:layout_weight="6"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="centerCrop"/>
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5">
+
+                        </View>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="45">
+
+                                <com.firstappsta.mingalapar.Library.TextViewPlus
+                                    android:id="@+id/tvTitleEng2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8"
+                                    android:background="@drawable/custom_box_for_engtext"
+                                    android:gravity="center"
+                                    android:text="H2V1E"
+                                    app:autoSizeMaxTextSize="16dp"
+                                    app:autoSizeMinTextSize="8dp"
+                                    app:autoSizeTextType="uniform"                                    android:textColor="@color/engText"
+                                    app:customFont="fonts/Dream.ttf" />
+
+                                <ImageView
+                                    android:id="@+id/img2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="22"
+                                    android:src="@drawable/imgfruit_avocado"
+                                    android:scaleType="centerCrop"
+                                    android:onClick="onClickImage"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="15">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/custom_box_for_mmtext"
+                                        android:orientation="vertical">
+
+                                        <com.firstappsta.mingalapar.Library.TextViewPlus
+                                            android:id="@+id/tvTitleMm2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="7"
+                                            android:gravity="center"
+                                            android:text="ထောပတ်သီး"
+                                            app:autoSizeMaxTextSize="16dp"
+                                            app:autoSizeMinTextSize="8dp"
+                                            app:autoSizeTextType="uniform"                                            android:textColor="@color/mmText"
+                                            app:customFont="fonts/mm3.ttf" />
+
+                                        <LinearLayout
+                                            android:id="@+id/imgSpeaker2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="8"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:onClick="onClickSpeaker"
+                                            android:weightSum="10">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/iconspeaker1"
+                                                android:padding="3dp"
+                                                android:adjustViewBounds="true"/>
+
+                                            <com.airbnb.lottie.LottieAnimationView
+                                                android:id="@+id/animation_sound2"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+
+                                                app:lottie_fileName="Voice.json"
+                                                app:lottie_loop="false"
+                                                app:lottie_autoPlay="false"
+                                                android:layout_weight="6"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="centerCrop" />
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5">
+
+                        </View>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="45">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="45">
+
+                                <com.firstappsta.mingalapar.Library.TextViewPlus
+                                    android:id="@+id/tvTitleEng4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="8"
+                                    android:background="@drawable/custom_box_for_engtext"
+                                    android:gravity="center"
+                                    android:text="H2V2E"
+                                    android:textColor="@color/engText"
+                                    app:autoSizeMaxTextSize="16dp"
+                                    app:autoSizeMinTextSize="8dp"
+                                    app:autoSizeTextType="uniform"
+                                    app:customFont="fonts/Dream.ttf" />
+
+                                <ImageView
+                                    android:id="@+id/img4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="22"
+                                    android:src="@drawable/imgfruit_banana"
+                                    android:scaleType="centerCrop"
+                                    android:onClick="onClickImage"/>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="15">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/custom_box_for_mmtext"
+                                        android:orientation="vertical">
+
+                                        <com.firstappsta.mingalapar.Library.TextViewPlus
+                                            android:id="@+id/tvTitleMm4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="7"
+                                            android:gravity="center"
+                                            android:text="ငှက်ပျောသီး"
+                                            app:autoSizeMaxTextSize="16dp"
+                                            app:autoSizeMinTextSize="8dp"
+                                            app:autoSizeTextType="uniform"                                            android:textColor="@color/mmText"
+                                            app:customFont="fonts/mm3.ttf" />
+
+                                        <LinearLayout
+                                            android:id="@+id/imgSpeaker4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="8"
+                                            android:orientation="horizontal"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:onClick="onClickSpeaker"
+                                            android:weightSum="10">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/iconspeaker1"
+                                                android:padding="3dp"
+                                                android:adjustViewBounds="true"/>
+
+                                            <com.airbnb.lottie.LottieAnimationView
+                                                android:id="@+id/animation_sound4"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                app:lottie_fileName="Voice.json"
+                                                app:lottie_loop="false"
+                                                app:lottie_autoPlay="false"
+                                                android:layout_weight="6"
+                                                android:adjustViewBounds="true"
+                                                android:scaleType="centerCrop"/>
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5">
+
+                        </View>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"></View>
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Previous"
+                android:textIsSelectable="false"
+                android:onClick="onClickPrevious"
+                android:background="@drawable/previous_box"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+            </View>
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textIsSelectable="false"
+                android:onClick="onClickNext"
+                android:background="@drawable/next_box"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"></View>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

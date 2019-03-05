@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/clear"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/iconback" />
+
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvCategoryTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center"
+                    android:text="Test"
+                    app:autoSizeMaxTextSize="24dp"
+                    app:autoSizeMinTextSize="20dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/Dream_Bold.ttf" />
+
+
+                <!--android:textAppearance="?android:textAppearanceLarge"-->
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/underline">
+
+        </View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="46"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="50">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/imgfruit_apple" />
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvTitleEng"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:text="Apple"
+                    app:autoSizeMaxTextSize="20dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/Dream.ttf" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8">
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvTitleMm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Elephant"
+                    app:autoSizeMaxTextSize="20dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/Dream.ttf" />
+
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="_ _ _ _ _ _ _ _ _"
+                    android:textColor="@color/black80"
+                    app:autoSizeMaxTextSize="20dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/Dream.ttf"/>
+
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btnNextTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:text="Next"
+                    android:onClick="onClickNextTest"
+                    android:background="@drawable/next_box"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <com.firstappsta.mingalapar.Library.TextViewPlus
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:text="What is this? Choose one."
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeMinTextSize="16dp"
+            app:autoSizeTextType="uniform"
+            app:customFont="fonts/Dream_BoldItalic.ttf"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:background="@color/mmBox"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvAnswer1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="ပန်းသီး"
+                    app:autoSizeMaxTextSize="16dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/mm3.ttf"
+                    android:onClick="onClickAnswer"
+                    android:clickable="true"/>
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvAnswer2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="ပန်းသီး"
+                    app:autoSizeMaxTextSize="16dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/mm3.ttf"
+                    android:onClick="onClickAnswer"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvAnswer3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="ပန်းသီး"
+                    app:autoSizeMaxTextSize="16dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/mm3.ttf"
+                    android:onClick="onClickAnswer"
+                    android:clickable="true"/>
+
+                <com.firstappsta.mingalapar.Library.TextViewPlus
+                    android:id="@+id/tvAnswer4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="10"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="ပန်းသီး"
+                    app:autoSizeMaxTextSize="16dp"
+                    app:autoSizeMinTextSize="8dp"
+                    app:autoSizeTextType="uniform"
+                    app:customFont="fonts/mm3.ttf"
+                    android:onClick="onClickAnswer"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
